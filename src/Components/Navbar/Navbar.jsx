@@ -26,7 +26,7 @@ const Navbar = ({setShowLogin}) => {
           <img src={assets.basket_icon}alt="" />
 
           </Link>
-          <div className="dot">{cartItems?Object.keys(cartItems).length:""}.</div>
+          <div className="dot">{Object.keys(cartItems).length>0?Object.keys(cartItems).length:""}</div>
         </div>
         <button onClick={()=>setShowLogin(true)}>sing in</button>
       </div>
